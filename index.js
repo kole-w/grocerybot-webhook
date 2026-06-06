@@ -6,8 +6,8 @@ app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
 const supabase = createClient(
-  process.env.SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_KEY
+  'https://cejsqvcwfukvbafjybjs.supabase.co',
+  'sb_secret_qEJcyhLwXLK3C5EHrVNK9Q_6D9G2Axb'
 )
 
 app.post('/sms', async (req, res) => {
